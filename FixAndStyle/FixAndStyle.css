@@ -1,0 +1,47 @@
+/* Style Page */
+
+
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+h1 {
+    background-color: #7d7dc4;
+}
+
+h2 {
+    color: blue;
+}
+
+h3 {
+    background-color: green;
+}
+
+h4 {
+    background-color: yellow;
+    color: blue;
+}
+
+h5 {
+    color: red;
+}
+
+body {
+    border: 3 px blue;
+}
+
+.highlighting {
+    background-color: yellow;
+    color: red;
+}
+
+.goldenOrange {
+    color: rgb(111, 81, 5);
+}
