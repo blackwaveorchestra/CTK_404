@@ -1,0 +1,96 @@
+/* Anything between these two tags will be ignored by the browser */
+
+
+
+/* all font ARIAL---- AND (see next line)*/
+/* add background image to all pages */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(assignment4BackgroundImage.jpg);
+}
+
+
+/* cenetered paragraph requirement */
+.centerFormatting {
+    text-align: center;
+}
+
+
+/* justified text requirement */
+.justifiedText {
+    text-align: justify;
+}
+
+/*all h1 and h2 are orange, italic and NOT bold */
+h1 {
+    color: orange;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* all h1 and h2 are orange, italic and NOT bold */
+h2 {
+    color: orange;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* give all images black and yellow borders */
+img {
+    border: 5px solid black;
+    padding: 10px;
+    background-color: yellow;
+}
+
+/* add background image to all pages */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(assignment4BackgroundImage.jpg);
+}
+
+
+.specialp {
+    color: blue;
+    background-color: #FF0000;
+}
+
+#specialID {
+    color: green;
+    background-color: #ffff33f9;
+}
+
+.orangebg {
+    background-color: orange;
+}
+
+.spanstyle {
+    color: blue;
+
+}
+a {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color: #00FFFF;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: green;
+}
