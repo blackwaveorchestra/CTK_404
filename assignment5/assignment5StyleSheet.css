@@ -1,0 +1,112 @@
+
+/*  background  */
+
+body {
+    background-image: url("a5bg.png");
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+#header {
+    background-color: #d3d3d3;
+    padding: 15px 25px;
+}
+
+/* h1 heading */
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/*  navigation panel */
+
+#nav {
+    background-color: #02025b;
+}
+
+
+#nav ul {
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+#nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-right: 1px solid #4040a0;
+}
+
+/* hover */
+#nav a:hover {
+    background-color: #2525a8;
+}
+
+
+#mainStuff {
+    background-color: #add8e6;
+    padding: 10px 20px;
+}
+
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+#pageDivision {
+    border-top: solid #000000;
+    margin-bottom: 225px;
+}
+
+
+#mainStuff p {
+    text-align: justify;
+}
+
+/* links */
+#mainStuff a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* links, visited */
+#mainStuff a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+/* links, hover */
+#mainStuff a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+#footerPart {
+    background-color: #000080;
+    border: white;
+    padding: 30px 45px;
+}
+
+#footerPart p {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+
