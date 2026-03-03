@@ -1,0 +1,144 @@
+
+/* CSS File */
+
+/*
+.element {
+  background-image: url('gridGeometryImage.png');
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+*/
+
+
+body {
+    background-image: url("gridGeometryImage.png");
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/*
+body {
+    background-image: url("greenImage.png");
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding 5px;
+    margin: 5 px;
+}
+*/
+
+.li {
+    max-width: 10px;
+}
+
+.page1 {
+    max-width: 1024px;
+    width: 100%;
+    border-center: 3px solid black;
+    border-middle: 3px solid black;
+    border-bottom: 3px solid black;
+    background-color: white;
+}
+
+.h1Top {
+    font-family: Helvetica, georgia;
+    font-weight: normal;
+    background-color: blue;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.gridPart {
+    display: inline-block;
+    justify-content: center;
+    grid-template-columns: auto 1fr 1fr;
+    gap: 0;
+    padding: 10px;
+    
+
+}
+
+ul {
+    list-style: none;
+    grid-column: span 3;
+    padding: 0;
+    margin: 0;
+}
+
+ul li a {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    font-family: Helvetica, georgia;
+    text-decoration: none;
+    padding: 8px 36px 8px 8px;
+    margin-bottom: 2px;
+}
+
+ul li a:hover {
+    background-color: green;
+}
+
+.centerPart {
+    padding: 0 10px;
+}
+
+h2 {
+    font-family: Helvetica, georgia;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+img {
+    border: 3px solid black;
+    width: 100%;
+    display: block;
+}
+
+.rightPart p {
+    font-family: Georgia, serif;
+    text-align: justify;
+    font-weight: bold;
+    margin-top: 0;
+    padding: 0 10px;
+}
+
+.paragraphSection {
+    padding: 0 10px;
+}
+
+.paragraphSection p {
+    font-family: Georgia, serif;
+    text-align: justify;
+}
+
+.paragraphSection p a:link,
+
+.paragraphSection p a:visited {
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.paragraphSection p a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.footerSection {
+    background-color: green;
+    padding: 10px 20px;
+}
+
+.footerSection p {
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
