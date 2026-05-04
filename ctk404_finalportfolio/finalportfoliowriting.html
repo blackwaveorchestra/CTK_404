@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing</title>
+    <link rel="stylesheet" href="finalportfolioStyleSheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Writing page score thumbnails */
+        #score-pages {
+            grid-column: 4 / 10;
+            grid-row: 2 / 6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            z-index: 2;
+            padding: 20px 0;
+            overflow-y: auto;
+        }
+
+        .score-thumb {
+            width: 280px;
+            cursor: pointer;
+            border: 2px solid #999;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .score-thumb:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Lightbox overlay */
+        #lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #lightbox.active {
+            display: flex;
+        }
+
+        #lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Header bar-->
+        <div id="header">
+            <h1>Writing</h1>
+        </div>
+
+        <!-- Homepage/MainPage-->
+        <div id="home-box">
+            <a href="finalportfolio.html"><p>Blackwaveorchestra Home</p></a>
+        </div>
+
+        <!-- Score page thumbnails -->
+        <div id="score-pages">
+            <img class="score-thumb" src="guitarTrio1_pg1.jpg" alt="Guitar Trio No. 1 - Page 1" onclick="openLightbox(this.src)">
+            <img class="score-thumb" src="guitarTrio1_pg2.jpg" alt="Guitar Trio No. 1 - Page 2" onclick="openLightbox(this.src)">
+        </div>
+
+        <!-- BJJ photo - top right -->
+        <img id="cat-photo" src="bjj.jpeg" alt="BJJ">
+
+        <!-- Pumpkins photo - bottom left -->
+        <img id="goose-photo" src="pumpkins.jpeg" alt="Pumpkins">
+
+    </div>
+
+    
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Enlarged score page">
+    </div>
+
+    <!-- script information (here, for reference)-->
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+
+</body>
+</html>
